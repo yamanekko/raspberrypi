@@ -52,9 +52,9 @@
 
 
 ## 実行
--「kernel.img」ファイルをSDカードにコピー
--SDカードをRaspberryPiに挿す
--電源投入
+- 「kernel.img」ファイルをSDカードにコピー
+- SDカードをRaspberryPiに挿す
+- 電源投入
 
 
 
