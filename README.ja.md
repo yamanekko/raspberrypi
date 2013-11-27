@@ -1,12 +1,12 @@
-#ビルドの仕方
-## 主な流れ
-- mrubyプロジェクトの作成
-- mrubyのビルド
-- RaspberryPiプロジェクトの作成
-- RaspberryPiのビルド
-- 実行
+# mruby on Bare-metal Raspberry Pi
 
-## mrubyプロジェクトの作成
+Bare-metal(LinuxなどのOSを使わない)なRaspberry Pi上でmrubyを動かすためのサンプルプロジェクトです。
+
+
+
+##ビルドの仕方
+
+### mrubyプロジェクトの作成
 
 - 「Window」メニューから「Open Perspective」->「Other...」で「Git Repository Exploring」を選択してOK
 - 「Git Repositories」ペインの中の「Clone a Git Repository and add the clone to this view」ボタンを押す
@@ -17,7 +17,7 @@
 - 「File」メニューから「New」->「Makefile Project with Existing Code」を選択
 - 「Import Existing Code」画面で「Project Name」に適当なプロジェクト名を入力、「Exising Code Loation」でさっき作ったディレクトリを指定、「Languages」はCとC++にチェックを入れる、Toolchain for Indexer SettingsはCross GCCを選択、Finish
 
-## mrubyのビルド
+### mrubyのビルド
 
 - プロジェクト直下の「build_config.rb」をエディタで開く
 - build_config.rbの「cc.command='/opt/gnuarm/bin/arm-none-eabi-gcc'」のパスを変更（MacPortsのarm-none-eabi-gccを使うなら「cc.command='/opt/local/bin/arm-none-eabi-gcc'」にする）
@@ -30,7 +30,7 @@
 - ビルドされて、「Build Summary」と「Build Finished」が表示されればOK
 
 
-## RaspberryPiプロジェクトの作成
+### RaspberryPiプロジェクトの作成
 
 - 「File」メニューから「Import...」を選択
 - 「Select」画面で「Git」の「Project from Git」を選択、Next
@@ -42,7 +42,7 @@
 - 「Select a wizard」画面で「C/C++」内の「Make Project with Existing Code」を選択、Next
 - 「Import Existing Code」画面で「Project Name」に適当なプロジェクト名を入力、「Exising Code Loation」でさっき作ったディレクトリを指定、「Languages」はCとC++にチェックを入れる、Toolchain for Indexer SettingsはCross GCCを選択、Finish
 
-# RaspberryPiのビルド
+### RaspberryPiのビルド
 
 - プロジェクト直下のMakefileを開く
 - 「ARMGNU」と「LIB」の値を適宜変更(MacPortsならそれぞれ「ARMGNU = /opt/local/bin/arm-none-eabi」「LIB = -L /opt/local/arm-none-eabi/lib/fpu/ -L/opt/local/lib/gcc/arm-none-eabi/4.7.2/fpu/」に変更)
@@ -51,7 +51,8 @@
 - 「Project」メニューの「Build Project」を選択
 
 
-## 実行
+### 実行
+
 - 「kernel.img」ファイルをSDカードにコピー
 - SDカードをRaspberryPiに挿す
 - 電源投入
