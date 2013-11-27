@@ -1,8 +1,8 @@
-# mruby on Bare-metal Raspberry Pi
+# mruby on bare-metal Raspberry Pi
 
-This is a sample project to use mruby on Bare-metal (without OSs such as Linux) Raspberry Pi.
+This is a sample project to use mruby on bare-metal (without OSs such as Linux) Raspberry Pi.
 
-cf. http://www.slideshare.net/yamanekko/rubyconf2013
+Cf. http://www.slideshare.net/yamanekko/rubyconf2013
 
 ## Tools
 
@@ -53,7 +53,7 @@ To build and use this sample, you need some tools:
 
 - open Makefile
 - set "ARMGNU" and "LIB" (If MacPorts, use ``ARMGNU = /opt/local/bin/arm-none-eabi`` and ``LIB = -L /opt/local/arm-none-eabi/lib/fpu/ -L/opt/local/lib/gcc/arm-none-eabi/4.7.2/fpu/``)
-- set "INCDIR" and "ULIBDIR" (If mruby project and raspberrypi project is in the same directory, use ``INCDIR = ../<mruby project dir>/include/`` and ``ULIBDIR = ../<mruby project dir>/build/rs/lib``)
+- set "INCDIR" and "ULIBDIR" (If mruby project and raspberrypi project are in the same directory, use ``INCDIR = ../<mruby project dir>/include/`` and ``ULIBDIR = ../<mruby project dir>/build/rs/lib``)
 -  save Makefile ("File" -> "Save")
 - Build the project ("Projec" -> "Build Project")
 
