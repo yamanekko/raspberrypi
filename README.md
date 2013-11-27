@@ -4,12 +4,12 @@ This is a sample project to use mruby on Bare-metal (without OSs such as Linux) 
 
 cf. http://www.slideshare.net/yamanekko/rubyconf2013
 
-## What we need
+## Tools
 
-We need some tools:
+To build and use this sample, you need some tools:
 
-- Eclipse CDT
 - GNU toolchain for ARM
+- Eclipse CDT (optional)
 - PC (we use OS X, but you may use it on Linux and Windows)
 - armjtag (https://github.com/dwelch67/raspberrypi/tree/master/armjtag) when you want to use JTAG debugger
 

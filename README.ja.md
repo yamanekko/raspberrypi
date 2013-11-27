@@ -2,6 +2,14 @@
 
 Bare-metal(LinuxなどのOSを使わない)なRaspberry Pi上でmrubyを動かすためのサンプルプロジェクトです。
 
+##ツールについて
+
+このサンプルを使うにはいくつかのツールが必要です。
+
+- GNU toolchain for ARM
+- Eclipse CDT (以下ではEclipseを使う場合の説明をしていますが、コマンドラインでも何とかなります)
+- PC (Mac OS Xで検証していますが、LinuxやWindowsでも動くはずです)
+- armjtag (https://github.com/dwelch67/raspberrypi/tree/master/armjtag) JTAGデバッガを使う場合に必要です
 
 
 ##ビルドの仕方
